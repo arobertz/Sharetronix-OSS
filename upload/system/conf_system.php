@@ -19,8 +19,7 @@
 	$C->INCPATH		= dirname(__FILE__).'/';
 	
 	$C->PROJPATH 	= defined('PROJPATH')? PROJPATH : (dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' .DIRECTORY_SEPARATOR );
-	//$C->MARKETPLACE_URL = "http://developer.sharetronix.com/";
-	$C->MARKETPLACE_URL = "http://192.168.1.131/stx_website/";
+	$C->MARKETPLACE_URL = "http://developer.sharetronix.com/";
 	
 	if( ! file_exists($C->INCPATH . 'conf_main.php') ) {
 		exit;
