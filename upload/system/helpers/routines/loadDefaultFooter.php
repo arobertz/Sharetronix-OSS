@@ -6,14 +6,22 @@
 		$page 	= & $GLOBALS['page'];
 		$user 	= & $GLOBALS['user'];
 		$pm 	= & $GLOBALS['plugins_manager'];
+		$terms_of_use	= FALSE;
 		
 		$page->load_langfile('outside/footer.php');
 		$page->load_langfile('inside/footer.php');
 		
+		if( isset($C->TERMSPAGE_ENABLED,$C->TERMSPAGE_CONTENT) && $C->TERMSPAGE_ENABLED==1 && !empty($C->TERMSPAGE_CONTENT) ){ 
+		$terms_of_use = TRUE; 
+		} 
+		
 		$html = ' &middot;<a href="'. $C->SITE_URL .'invite">'. $page->lang('os_ftrlinks_sf_invitemail'). '</a> ';
 		$html .= ' &middot;<a href="'. $C->SITE_URL .'m">'. $page->lang('footer_mobile_version') .'</a> ';
+		if($terms_of_use) { 
+		$html .= ' &middot; <a href="'. $C->SITE_URL .'terms">'. $page->lang('ftrlinks_sa_terms') .'</a> '; 
+		}
 		$html .= ' &middot;<a href="'. $C->SITE_URL .'contacts">'. $page->lang('ftr_contacts') .'</a> ';
-		
+	 
 		/*if( $user->is_logged ) {
 			$html .= ' &middot;<a href="'. $C->SITE_URL .'api">'. $page->lang('ftr_api') .'</a> ';
 		}*/
