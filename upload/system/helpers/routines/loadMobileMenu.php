@@ -38,7 +38,7 @@
 		$tpl->layout->setVar( 'header_class', ($has_notifications == 1) ? 'active' : '');
 
 		
-		$menu = array( 	array('url' => $user->info->username, 		'css_class' => 'profile', 		'title' => $page->lang('user_profile_my_profile') ));
+		$menu = array( 	array('url' => $user->info->username, 		'css_class' => 'profile', 		'title' => $user->info->fullname ));
 		$tpl->layout->setVar( 'menu_content_placeholder', $tpl->designer->createInfoBlock(' ', $tpl->designer->createMenu('feed-navigation', $menu)) );
 		
 		$menu = array();
