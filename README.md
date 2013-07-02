@@ -3,14 +3,12 @@ Welcome to Sharetronix Opensource
   Sharetronix Opensource is a multimedia microblogging platform. It helps
   people in a community, company, or group to exchange short messages over
   the Web. Find more information in http://developer.sharetronix.com/
--------------------------
 
 License
 -------------------------
   Please check out the license.txt file. By installing Sharetronix, you
   agree to all the conditions of the license and also to the Sharetronix
   Terms of Use: http://developer.sharetronix.com/license
--------------------------
   
 Powered by Sharetronix link
 -------------------------
@@ -21,12 +19,7 @@ Powered by Sharetronix link
   
 INSTALLATION
 -------------------------
-  To install Sharetronix Opensource on your webserver, upload the contents
-  of the "upload/" folder to the preferred location on your webserver
-  (wherever you want to install Sharetronix) with your favorite FTP client.
-  Open with your browser the "install" location in this folder and follow
-  the steps in the installation wizard.
--------------------------
+  To install Sharetronix Opensource on your webserver, upload the contents of the "upload/" folder to the preferred location on your webserver (wherever you want to install Sharetronix) with your favorite FTP client. Open with your browser the "install" location in this folder and follow the steps in the installation wizard.
 
 UPGRADE
 -------------------------
@@ -49,7 +42,6 @@ Official website
   http://sharetronix.com
   http://sharetronixmicro.com
   http://developer.sharetronix.com/
--------------------------
 
 Important security setting
 --------------------------
@@ -85,11 +77,7 @@ Mail send problems
  
   Note: please backup the file ./system/helpers/func_main.php before applying any changes
 
-
--------------------------
-
 Using Google reCaptcha
-
 -------------------------
   
   To activate the google reCaptcha on your sharetronix community follow the steps below:
@@ -99,20 +87,12 @@ Using Google reCaptcha
   4. Enter the value for the private key at $C->GOOGLE_CAPTCHA_PRIVATE_KEY 
   5. Enter the value for the public key at $C->GOOGLE_CAPTCHA_PUBLIC_KEY
   
-
--------------------------
-  
 One click install
-  
 -------------------------
   Softaculous 	- http://www.softaculous.com/softwares/microblogs/Sharetronix
   AMPPS		- http://www.ampps.com/apps/php/microblogs/Sharetronix
   
-  
--------------------------
-  
 FACEBOOK CONNECT
-
 -------------------------
   To activate Facebook Connect integration for your Sharetronix site, first
   you have to register a Facebook application and get its API key:
@@ -129,12 +109,8 @@ FACEBOOK CONNECT
   $C->FACEBOOK_API_KEY		= 'Your Key';
   $C->FACEBOOK_API_ID		= 'Your app id'; 
   $C->FACEBOOK_API_SECRET	= 'Your app secret';
-
-
--------------------------
   
 TWITTER CONNECT
-
 -------------------------
   To activate Twitter OAuth Login for your Sharetronix site, first you have
   to register a Twitter application and get its Consumer KEY and SECRET:
@@ -149,12 +125,8 @@ TWITTER CONNECT
   $C->TWITTER_CONSUMER_SECRET	= '';
   
   7. You MUST also put a Callback URL in the SETTINGS tab in your twitter application. Set it to your community URL
-  
-  
--------------------------
-  
+    
 BIT.LY
-
 -------------------------
   To activate Bit.ly
   
